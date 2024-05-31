@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <title>TRUMP THE HEDGEDOG</title>
+
+
+    <link rel="stylesheet" href="ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <!-- <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" /> -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16" />
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <style>
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #bb7b01;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #bb7b01 !important;
+        }
+
+        .site-footer-top {
+            background-color: white;
+        }
+
+        .pricing-thumb {
+            border: 5px dotted white;
+            border-radius: var(--border-radius-medium);
+            position: relative;
+            padding: 50px;
+        }
+
+        body {
+            background: rgb(226, 178, 100);
+            background-image: linear-gradient(
+  45deg,
+  hsl(289deg 100% 57%) 0%,
+  hsl(192deg 100% 50%) 50%,
+  hsl(158deg 99% 50%) 100%
+);
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .navbar {
+            background-image: repeating-linear-gradient(rgba(0, 255, 76, .1), rgba(255, 0, 0, .1) 2px, transparent 0, transparent 4px);
+            background-color: rgb(19, 5, 216);
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .custom-btn {
+            background: var(--custom-btn-bg-color);
+            border: 2px solid transparent;
+            border-radius: 0;
+            color: var(--white-color);
+            font-size: var(--btn-font-size);
+            font-weight: var(--font-weight-bold);
+            line-height: normal;
+            transition: all 0.3s;
+            padding: 10px 20px;
+        }
+
+        .bg-green {
+            background-color: #bb7b01;
+            border-radius: 0;
+            color: #bb7b01;
+            background-color: #bb7b01;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, .75);
+            position: relative;
+            font-family: VCR OSD Mono, monospace;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, .75);
+            font-size: 1.2rem;
+            letter-spacing: 0;
+        }
+
+        .bg-blue {
+            border-radius: 0;
+            color: rgb(24, 57, 247) !important;
+            background-color: #002044 !important;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, .75);
+            position: relative;
+            font-family: VCR OSD Mono, monospace;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, .75);
+            font-size: 1.2rem;
+            letter-spacing: 0;
+        }
+
+        .loafFi {
+            color: #fff;
+            text-shadow: 3px 3px #283593;
+        }
+
+        .bg-orange {
+            border-radius: 0;
+            color: #ff5 !important;
+            background-color: #283593 !important;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, .75);
+            position: relative;
+            font-family: VCR OSD Mono, monospace;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, .75);
+            font-size: 1.2rem;
+            letter-spacing: 0;
+        }
+
+        .bg-gold {
+            border-radius: 0;
+            color: #283593 !important;
+            background-color: #ff5 !important;
+            text-shadow: 1px 1px rgb(0, 0, 0);
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 5px 5px 0 #283593;
+            position: relative;
+            font-family: 'Pixelify Sans', sans-serif;
+            text-shadow: 1px 1px 0 rgb(0, 0, 0);
+            font-size: 1.8rem;
+            letter-spacing: 0;
+        }
+
+        .bg-green:hover {
+            background-color: #206e2d !important;
+        }
+
+        .bg-blue:hover {
+            background-color: #00428d !important;
+        }
+
+        .bg-orange:hover {
+            background-color: #ac6e30 !important;
+        }
+
+        .bg-gold:hover {
+            background-color: #ac6e30 !important;
+            color: #ff5 !important;
+        }
+
+        .introt {
+            color: #ffdc9e;
+            /* #ff5; */
+            text-shadow: 3px 3px #283593;
+        }
+
+        html::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media screen and (max-width: 500px) {
+            #copy-button {
+                font-size: 0.8rem !important;
+            }
+            .site-footer-link,
+            .copyright-text {
+                font-size: 15px;
+                color: var(--white-color);
+            }
+        }
+
+        #videoWrapper {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #videoWrapper video {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            z-index: -100;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        #videoWrapper .caption {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        #videoWrapper .caption .contents {
+            width: 50%;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .buy-button {
+            background-color: #D2691E;
+            /* brown background */
+            color: white;
+            /* white text */
+            padding: 10px 20px;
+            /* top/bottom padding and left/right padding */
+            border: none;
+            /* no border */
+            outline: none;
+            /* remove outline */
+            font-size: 16px;
+            /* font size */
+            font-weight: bold;
+            /* make text bold */
+            border-radius: 0px;
+            /* rounded corners */
+            box-shadow: 0 4px #8B4513;
+            /* dark brown shadow to simulate the 3D effect */
+            cursor: pointer;
+            /* cursor changes to a hand icon when hovered over the button */
+            transition: all 0.3s ease;
+            /* transition for the press-down effect */
+            border: 3px;
+            border-color: #ffdc9e;
+            border-style: dashed;
+        }
+
+        .buy-button:hover {
+            background-color: #CD853F;
+            /* slightly lighter brown when hovered */
+            color: #ffdc9e !important;
+        }
+
+        .buy-button:active {
+            box-shadow: 0 1px #8B4513;
+            /* adjust shadow to make it look like it's being pressed */
+            transform: translateY(3px);
+            /* move the button down 3px */
+        }
+
+        .telegram-button {
+            background-color: #1e99d2;
+            /* brown background */
+            color: white;
+            /* white text */
+            padding: 10px 20px;
+            /* top/bottom padding and left/right padding */
+            border: none;
+            /* no border */
+            outline: none;
+            /* remove outline */
+            font-size: 16px;
+            /* font size */
+            font-weight: bold;
+            /* make text bold */
+            border-radius: 0px;
+            /* rounded corners */
+            box-shadow: 0 4px #8B4513;
+            /* dark brown shadow to simulate the 3D effect */
+            cursor: pointer;
+            /* cursor changes to a hand icon when hovered over the button */
+            transition: all 0.3s ease;
+            /* transition for the press-down effect */
+            border: 3px;
+            border-color: #ffdc9e;
+            border-style: dashed;
+        }
+
+        .telegram-button:hover {
+            background-color: #1775a0;
+            /* slightly lighter brown when hovered */
+            color: #ffdc9e !important;
+        }
+
+        .telegram-button:active {
+            box-shadow: 0 1px #1775a0;
+            /* adjust shadow to make it look like it's being pressed */
+            transform: translateY(3px);
+            /* move the button down 3px */
+        }
+
+        .chart-button {
+            background-color: violet;
+            /* brown background */
+            color: #8B4513;
+            /* white text */
+            padding: 10px 20px;
+            /* top/bottom padding and left/right padding */
+            border: none;
+            /* no border */
+            outline: none;
+            /* remove outline */
+            font-size: 16px;
+            /* font size */
+            font-weight: bold;
+            /* make text bold */
+            border-radius: 0px;
+            /* rounded corners */
+            box-shadow: 0 4px #8B4513;
+            /* dark brown shadow to simulate the 3D effect */
+            cursor: pointer;
+            /* cursor changes to a hand icon when hovered over the button */
+            transition: all 0.3s ease;
+            /* transition for the press-down effect */
+            border: 3px;
+            border-color: #965a06;
+            border-style: dashed;
+        }
+
+        .chart-button:hover {
+            background-color: #965a06;
+            /* slightly lighter brown when hovered */
+            color: #ffdc9e !important;
+            border-color: #ffdc9e;
+        }
+
+        .chart-button:active {
+            box-shadow: 0 1px #965a06;
+            /* adjust shadow to make it look like it's being pressed */
+            transform: translateY(3px);
+            /* move the button down 3px */
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #intro_loaf {
+            background-image: url('img/t2.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+
+
+        <!-- Trigger Button -->
+
+
+        <!-- Modal Structure -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody">
+                    <img style="display: block;margin: 0 auto;width: 100%;" src="img/c2.gif" alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand " style="font-family: 'Pixelify Sans', sans-serif;" href="#">
+                    <img src="logo.png" style="  width: 70px;" alt="">
+                    <span data-splitting>TRUMP THE HEDGEHOG</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll home" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll " href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll tokenomics" href="#tokenomics">Tokenomics</a>
+                        </li>
+
+
+                        <!-- <li class="nav-item">
+                            <a id="modalTrigger" class="nav-link click-scroll buy_letsgo" href="#bread_community">Catpaper<sup></sup></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll play-chart" href="https://birdeye.so/token/2RMEkL3A61qH1xwQyaZemDt1xoxskmqRVWD2njfkMuJL?chain=solana" target="_new">Chart</a>
+                        </li>
+
+                    </ul>
+                    <a target="_new" href="https://t.me/WonkPortal" class=" telegram-join " style="    margin-right: 1rem;" data-splitting>
+                        <i class="fa-brands fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://twitter.com/WonkonSOL" target="_new" style="    margin-right: 1rem;" class="" data-splitting>
+                        <i class="fa-brands fa-twitter"></i> Twitter
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="#intro_loaf" style=" background-image: url('bg.jpg');background-size: cover;background-repeat: no-repeat;background-position: center;">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+
+                        <h1 class="introt" style="">
+                            <div data-splitting>$TRUMG</div>
+                        </h1>
+
+
+                        <h3 class="introt ">
+                            <div data-splitting> Gotta go fast to the elections, im on steroids nobody zooms as fast as me, believe it!</div>
+
+                        </h3>
+
+
+
+
+                        <a href="#" target="_new" class="buy-button contract_btn ">
+                            Buy Here
+                        </a>
+                        <a href="https://t.me/TrumpHedgeSol" target="_new" class="telegram-button telegram-join">
+                            Telegram
+                        </a>
+                        <a href="https://twitter.com/TrumpHedgeSol_" target="_new" class="chart-button play-chart">
+                            Twitter
+                        </a>
+                        <a href="#" target="_new" class="buy-button contract_btn ">
+                            Chart
+                        </a>
+                        <!-- <a style="font-size:1rem" href="javascript:void(0)" class="btn d-block bg-gold mt-5 custom-btn smoothscroll play-thething">
+                            <i class="fa-solid fa-play"></i><span class="playthisthing"> Play Kitty Kneads More
+                                Dough</span>
+                        </a> -->
+
+                    </div>
+
+                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+
+
+                        <div class="location-wrap mx-auto py-3 py-lg-0">
+
+                        </div>
+
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/pexels-2022395.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+        </section>
+
+
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 text-center col-12 mb-4 mb-lg-0 d-flex align-items-center">
+
+                        <div class="services-info col-md-8 mx-auto">
+                            <h2 class="  introtext mb-4">
+                                <div data-splitting>About</div>
+                            </h2>
+                            <div class="theIntro" style="    word-spacing: 10px;">
+                                <p style="    word-spacing: 10px;">
+
+                                    You've found your Trump favourite token ever!
+                                    Let's make magic happen! 🚀
+                                </p>
+                                 
+
+                                <!-- <p style="    word-spacing: 10px;">
+                                    <span style="color:#bb7b01" data-splitting>Please note: 
+                                    </span>
+                                    This is not made of by coffee water sugar and cream
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="col-md-8 mx-auto col-12">
+                        <div class="about-text-wrap">
+                            <form>
+                                <input id="catbread" type="checkbox" name="catbread" value="meowing">
+                                <label class="catbread" for="catbread">
+                                    <span class="catbread__sr-text">Catbread</span>
+                                    <span class="catbread__right-ear"></span>
+                                    <span class="catbread__left-ear"></span>
+                                    <span class="catbread__eyes"></span>
+                                    <span class="catbread__mouth"></span>
+                                </label>
+                            </form>
+                            <p class="text-center">Click the bread!</p>
+
+
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="pricing-section section-padding " id="tokenomics">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 mx-auto">
+                        <h2 class="text-center tokenomics  introt mb-4">
+                            <div data-splitting>Tokenomics</div>
+                        </h2>
+                        <p class="text-center">
+
+                            <a style="color:#bb7b01 !important" id="copy-button" class="caAddrr animate__animated contract_btn animate__infinite animate__wobble" data-text="2RMEkL3A61qH1xwQyaZemDt1xoxskmqRVWD2njfkMuJL" href="javascript:void(0)">
+                                Soon
+                                <i class="fa-solid fa-copy"></i>
+
+                            </a>
+                            <div class="copied" style="text-align:center;color:rgb(205, 137, 69);"></div>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 col-12 ">
+                     
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <div class="pricing-thumb">
+                            <div class="d-block">
+                                <div>
+                                    <h3 class="">
+                                        <img src="SONICTRUMP_BUY.gif" style="border-radius: 25px;" class="w-100" alt="">
+                                    </h3>
+
+                                </div>
+                                <div>
+                                    <h3 class="animate__animated animate__bounce animate__infinite"><small class="bAtL">Supply</small></h3>
+                                    <p> 111,000.000 <span style="color:#bb7b01" data-splitting> $TRUMG
+                                    </span>
+                                    </p>
+                                    <h3 class="animate__animated animate__bounce animate__infinite"><small class="bAtL">Liquidity</small></h3>
+
+                                    <p>99,900.000 <span style="color:#bb7b01" data-splitting> $TRUMG
+                                    </span> (90%)</p>
+                                    <h3 class="">
+                                        <small class="renounsecOwner">
+                                        <a href="https://solscan.io/tx" target="_new"
+                                            class="animate__animated  animate__infinite animate__tada contract_btn color-contrast-higher">LP Burn
+                                        </a>
+                                    </h3>
+                                    <br/>
+                                </div>
+
+                            </div>
+
+
+                            <a class="link-fx-1 color-contrast-higher mt-4 contract_btn" target="_new" href="#">
+                                <span class="buyHere contract_btn">Buy Here</span>
+                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="16" cy="16" r="15.5"></circle>
+                                        <line x1="10" y1="18" x2="16" y2="12"></line>
+                                        <line x1="16" y1="12" x2="22" y2="18"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- <img style="    width: 100%;" src="/1.png" alt=""> -->
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 ">
+                        <!-- <img style="    width: 100%;" src="/meme1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <img style="    width: 100%;" src="meme5.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 col-12 ">
+                        <!-- <img style="    width: 100%;" src="/meme2.jpg" alt=""> -->
+                    </div>
+                  
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section-padding" id="bread_community">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 text-center col-12 mb-4 mb-lg-0 d-flex align-items-center">
+
+                        <div class="services-info col-md-8 mx-auto">
+                            <h2 class=" introt mb-4 goldMine" style="color: #283593;" data-splitting>Community Rewards <br /> 
+                            </h2>
+
+                            <p class=" gmT">
+                                Join a <a href="#" target="_new" style="color:#283593">
+                                    community</a> and win the prizes.
+                                <br />
+                               <BR></BR>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 mx-auto col-12">
+                        <div class="about-text-wrap text-center">
+                            <img src="join.jpg" class="about-image img-fluid">
+                            <a href="https://t.me/TrumpHedgeSol" target="_new" class="  mt-5 mx-auto  chart-button  smoothscroll ">
+                                <h4 style="color:#283593; " class="">Join our Community</h4>
+                            </a>
+                            <img src="logo.png" alt="" style="width: 100px;margin:0 auto;display: block; margin-top: 0.5rem;">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer class="site-footer">
+       
+
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" target="_new" class="buy_letsgo site-footer-link">
+
+                                    <i class="fa-solid fa-chart-simple"></i> Birdeye</a>
+                            </li>
+                            <li class="site-footer-link-item">
+                                <a href="#" target="_new" class="buy_letsgo site-footer-link">
+
+                                    <i class="fa-solid fa-right-left"></i>   Raydium</a>
+                            </li>
+                            <li class="site-footer-link-item">
+                                <a href="https://t.me/TrumpHedgeSol" target="_new" class="site-footer-link telegram-join">
+                                    <i class="fa-brands fa-telegram"></i> Telegram</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="https://twitter.com/TrumpHedgeSol_" target="_new" class="site-footer-link"> <i
+                                        class="fa-brands fa-twitter"></i> Twitter</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- <script src="js/click-scroll.js"></script> -->
+    <script src="js/custom.js"></script>
+
+    <script src="ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <script>
+        $(function() {
+            const audio = new Audio('sounds/pop-cat-singing-i-ghuss.mp3');
+            const asdButtons = document.getElementsByClassName('play-chart');
+
+            for (let i = 0; i < asdButtons.length; i++) {
+                asdButtons[i].addEventListener('click', () => {
+                    stopAllAudios();
+                    console.log('????')
+                    audio.play();
+                });
+            }
+
+            const audio2 = new Audio('sounds/telegram_cat.mp3');
+            const asdButtons2 = document.getElementsByClassName('telegram-join');
+
+            for (let i = 0; i < asdButtons2.length; i++) {
+                asdButtons2[i].addEventListener('click', () => {
+                    stopAllAudios();
+                    audio2.play();
+                });
+            }
+
+            const audio3 = new Audio('sounds/icanDOthat.mp3');
+            const asdButtons3 = document.getElementsByClassName('buy_letsgo');
+
+            for (let i = 0; i < asdButtons3.length; i++) {
+                asdButtons3[i].addEventListener('click', () => {
+                    stopAllAudios();
+                    audio3.play();
+                });
+            }
+
+            const audio4 = new Audio('sounds/catcom.html');
+            audio4.loop = true; // Set audio4 to loop infinitely
+            const asdButtons4 = document.getElementsByClassName('play-thething');
+
+            for (let i = 0; i < asdButtons4.length; i++) {
+                asdButtons4[i].addEventListener('click', () => {
+                    stopAllAudios();
+                    audio4.play();
+                });
+            }
+
+            const audio5 = new Audio('sounds/contract.mp3');
+            const asdButtons5 = document.getElementsByClassName('contract_btn');
+
+            for (let i = 0; i < asdButtons5.length; i++) {
+                asdButtons5[i].addEventListener('click', () => {
+                    stopAllAudios();
+                    audio5.play();
+                });
+            }
+
+
+            function stopAllAudios() {
+                [audio, audio2, audio3, audio4, audio5].forEach(audio => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
+            }
+
+
+
+        })
+
+        $(document).ready(function() {
+            $('#copy-button').click(function() {
+                var dataText = $(this).attr('data-text');
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val(dataText).select();
+                document.execCommand("copy");
+                $temp.remove();
+
+
+                $('.copied').html('Copied!');
+
+                // Hide tooltip after 2 seconds
+                setTimeout(function() {
+                    $('.copied').html('');
+                }, 2000);
+            });
+
+            function toggleMenu(button) {
+                var menu = document.getElementById("navbarNav");
+                var expanded = menu.getAttribute("data-expanded");
+                if (expanded === "false") {
+                    menu.classList.add("show");
+                    menu.setAttribute("data-expanded", "true");
+                    button.setAttribute("aria-expanded", "true");
+                } else {
+                    menu.classList.remove("show");
+                    menu.setAttribute("data-expanded", "false");
+                    button.setAttribute("aria-expanded", "false");
+                }
+            }
+        });
+    </script>
+
+    <!-- Squigglevision -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence id="turbulence" baseFrequency="0.05" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+            </filter>
+
+            <filter id="squiggly-2">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2.5" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+            </filter>
+
+            <filter id="squiggly-4">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="1" />
+            </filter>
+        </defs>
+    </svg>
+    <!-- partial -->
+
+    <!-- partial -->
+    <script src='unpkg.com/splitting%401.0.6/dist/splitting.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            Splitting();
+
+            /* ---------------------------------- */
+            /* Click to re-run */
+
+            //document.body.innerHTML += '<div style="position: absolute; top: 0; left: 0; right: 0; padding: .5em; font-size: 12px; font-family: monospace; text-align: center; pointer-event: none; "></div>';
+
+            var lr = document.querySelector('[data-splitting]');
+            window.addEventListener('click', () => {
+                var newone = lr.cloneNode(true);
+                lr.parentNode.replaceChild(newone, lr);
+                lr = newone;
+            });
+
+
+
+            document.getElementById('modalTrigger').onclick = function() {
+                var modal = document.getElementById('myModal');
+                var modalBody = document.getElementById('modalBody');
+
+                // Load your HTML file content into the modal body
+                fetch('ttt.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        // modalBody.innerHTML = data;
+                        modal.style.display = "block";
+                    });
+
+                // Close the modal
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                // Close if clicked anywhere outside of the modal
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            };
+
+
+        });
+    </script>
+</body>
+
+
+</html>
